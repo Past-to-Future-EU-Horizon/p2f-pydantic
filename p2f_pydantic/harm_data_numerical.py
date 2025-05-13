@@ -8,14 +8,14 @@ class harmonized_int_confidence(BaseModel):
     lower_conf_interval: float
     upper_conf_value: int
     lower_conf_value: int
-    data_record: int
-    data_type: int
+    fk_data_record: int
+    fk_data_type: int
 
 class harmonized_int(BaseModel):
     pk_harm_int: Optional[int]
     value: int
-    data_record: int
-    data_type: int
+    fk_data_record: int
+    fk_data_type: int
 
 class harmonized_float_confidence(BaseModel):
     pk_harm_float_conf: Optional[int]
@@ -24,12 +24,12 @@ class harmonized_float_confidence(BaseModel):
     lower_conf_interval: float
     upper_conf_value: float
     lower_conf_value: float
-    data_record: int
-    data_type: int
+    fk_data_record: int
+    fk_data_type: int
     
-class harmonized_float_confidence(BaseModel):
+class harmonized_float(BaseModel):
     pk_harm_float: Optional[int]
     value: float
-    data_record: int
-    data_type: int
+    fk_data_record: int
+    fk_data_type: int
     
