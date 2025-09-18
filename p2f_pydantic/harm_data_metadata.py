@@ -6,8 +6,10 @@ class harm_location(BaseModel):
     pk_harm_location: Optional[int] = None
     location_identifier: UUID
     location_name: Optional[str] = None
+    location_code: Optional[str] = None
     latitude: float
     longitude: float
+    elevation: float
     location_age: int
 
 class harm_location_to_record(BaseModel):
