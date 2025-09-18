@@ -1,8 +1,9 @@
 from pydantic import BaseModel
 from typing import Optional, Literal, Union
+from uuid import UUID
 
 class harmonized_int_confidence(BaseModel):
-    pk_harm_num: Optional[int] = None
+    pk_harm_num: Optional[UUID] = None
     value: int
     upper_conf_interval: float
     lower_conf_interval: float
@@ -12,13 +13,13 @@ class harmonized_int_confidence(BaseModel):
     fk_data_type: int
 
 class harmonized_int(BaseModel):
-    pk_harm_num: Optional[int] = None
+    pk_harm_num: Optional[UUID] = None
     value: int
     fk_data_record: str
     fk_data_type: int
 
 class harmonized_float_confidence(BaseModel):
-    pk_harm_num: Optional[int] = None
+    pk_harm_num: Optional[UUID] = None
     value: float
     upper_conf_interval: float
     lower_conf_interval: float
@@ -28,7 +29,7 @@ class harmonized_float_confidence(BaseModel):
     fk_data_type: int
     
 class harmonized_float(BaseModel):
-    pk_harm_num: Optional[int] = None
+    pk_harm_num: Optional[UUID] = None
     value: float
     fk_data_record: str
     fk_data_type: int
