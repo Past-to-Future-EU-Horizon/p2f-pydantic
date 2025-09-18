@@ -4,7 +4,7 @@ from uuid import UUID
 
 class harm_location(BaseModel):
     pk_harm_location: Optional[int] = None
-    location_identifier: UUID
+    location_identifier: Optional[UUID] = None
     location_name: Optional[str] = None
     location_code: Optional[str] = None
     latitude: float
@@ -16,6 +16,12 @@ class harm_location_to_record(BaseModel):
     pk_harm_location_to_record: Optional[int] = None
     fk_harm_location: UUID
     fk_data_record: str
+
+class harm_bounding_box(BaseModel):
+    north: float
+    east: float
+    south: float
+    west: float
 
 class harm_data_species(BaseModel):
     pk_harm_species: Optional[int] = None
