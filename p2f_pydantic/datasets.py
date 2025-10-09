@@ -5,7 +5,7 @@ from uuid import UUID
 
 class Datasets(BaseModel):
     pk_datasets: Optional[int]
-    dataset_identifier: UUID
+    dataset_identifier: Optional[UUID]
     doi: str
     title: str
     publication_date: date

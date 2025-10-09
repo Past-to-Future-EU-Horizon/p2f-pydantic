@@ -1,6 +1,6 @@
 [project]
 name = "p2f-pydantic"
-version = "0.0.2"
+version = "0.0.3"
 description = "Pydantic library to define the data types of the Past to Future project API."
 readme = "README.md"
 requires-python = ">=3.13"

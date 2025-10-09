@@ -25,7 +25,7 @@ class harm_bounding_box(BaseModel):
 
 class harm_data_species(BaseModel):
     pk_harm_species: Optional[int] = None
-    species_identifier: UUID
+    species_identifier: Optional[UUID]
     display_species: str
     common_name: Optional[str] = None
     tax_kingdom: Optional[str] = None
@@ -38,5 +38,5 @@ class harm_data_species(BaseModel):
 
 class harm_species_to_record(BaseModel):
     pk_harm_species_to_record: Optional[int] = None
-    fk_species_identifier: UUID
+    fk_species_identifier: Optional[UUID]
     fk_data_record: str
