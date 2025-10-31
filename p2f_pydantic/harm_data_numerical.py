@@ -49,7 +49,7 @@ class insert_harm_numerical(BaseModel):
     lower_conf_value: Optional[Union[int, float]] = None
 
 class return_harm_numerical(BaseModel):
-    harmonized_int: Optional[List[harmonized_int]] = None
-    harmonized_int_confidence: Optional[List[harmonized_int_confidence]] = None
-    harmonized_float: Optional[List[harmonized_float]] = None
-    harmonized_float_confidence: Optional[List[harmonized_float_confidence]] = None
+    data_harmonized_int: Optional[List[harmonized_int]] = None
+    data_harmonized_int_confidence: Optional[List[harmonized_int_confidence]] = None
+    data_harmonized_float: Optional[List[harmonized_float]] = None
+    data_harmonized_float_confidence: Optional[List[harmonized_float_confidence]] = None
