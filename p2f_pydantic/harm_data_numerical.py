@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, Literal, Union
+from typing import Optional, Literal, Union, List
 from uuid import UUID
 
 class harmonized_int_confidence(BaseModel):
@@ -47,3 +47,9 @@ class insert_harm_numerical(BaseModel):
     lower_conf_interval: Optional[Union[int, float]] = None
     upper_conf_value: Optional[Union[int, float]] = None
     lower_conf_value: Optional[Union[int, float]] = None
+
+class return_harm_numerical(BaseModel):
+    harmonized_int: Optional[List[harmonized_int]]
+    harmonized_int_confidence: Optional[List[harmonized_int_confidence]]
+    harmonized_float: Optional[List[harmonized_float]]
+    harmonized_float_confidence: Optional[List[harmonized_float_confidence]]
