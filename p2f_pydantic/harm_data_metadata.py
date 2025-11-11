@@ -3,7 +3,6 @@ from typing import Optional
 from uuid import UUID
 
 class harm_location(BaseModel):
-    pk_harm_location: Optional[int] = None
     location_identifier: Optional[UUID] = None
     location_name: Optional[str] = None
     location_code: Optional[str] = None
@@ -13,7 +12,6 @@ class harm_location(BaseModel):
     location_age: int
 
 class harm_location_to_record(BaseModel):
-    pk_harm_location_to_record: Optional[int] = None
     fk_harm_location: UUID
     fk_data_record: str
 
@@ -24,7 +22,6 @@ class harm_bounding_box(BaseModel):
     west: float
 
 class harm_data_species(BaseModel):
-    pk_harm_species: Optional[int] = None
     species_identifier: Optional[UUID] = None
     display_species: str
     common_name: Optional[str] = None
@@ -45,6 +42,5 @@ class harm_data_species(BaseModel):
     tax_subspecies: Optional[str] = None
 
 class harm_species_to_record(BaseModel):
-    pk_harm_species_to_record: Optional[int] = None
     fk_species_identifier: Optional[UUID] = None
     fk_data_record: str
