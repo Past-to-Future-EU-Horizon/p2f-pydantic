@@ -9,12 +9,12 @@ class harmonized_int_confidence(BaseModel):
     upper_conf_value: int
     lower_conf_value: int
     fk_data_record: str
-    fk_data_type: int
+    fk_data_type: UUID
 
 class harmonized_int(BaseModel):
     value: int
     fk_data_record: str
-    fk_data_type: int
+    fk_data_type: UUID
 
 class harmonized_float_confidence(BaseModel):
     value: float
@@ -23,12 +23,12 @@ class harmonized_float_confidence(BaseModel):
     upper_conf_value: float
     lower_conf_value: float
     fk_data_record: str
-    fk_data_type: int
+    fk_data_type: UUID
     
 class harmonized_float(BaseModel):
     value: float
     fk_data_record: str
-    fk_data_type: int
+    fk_data_type: UUID
     
 ## With this model below we can reduce the number of services needed
 ## to insert or update data in the database. 
@@ -36,7 +36,7 @@ class harmonized_float(BaseModel):
 ## confidence values exist, we can further deduce the target table. 
 class insert_harm_numerical(BaseModel):
     fk_data_record: str
-    fk_data_type: int 
+    fk_data_type: UUID
     numerical_type: Literal["INT", "FLOAT"]
     value: Union[int, float]
     upper_conf_interval: Optional[Union[int, float]] = None
