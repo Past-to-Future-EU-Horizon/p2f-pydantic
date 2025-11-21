@@ -24,12 +24,12 @@ class harmonized_float_confidence(BaseModel):
     lower_conf_value: float
     fk_data_record: str
     fk_data_type: UUID
-    
+
 class harmonized_float(BaseModel):
     value: float
     fk_data_record: str
     fk_data_type: UUID
-    
+
 ## With this model below we can reduce the number of services needed
 ## to insert or update data in the database. 
 ## We just need to have a declaration of int or float, and if the 
