@@ -1,11 +1,11 @@
-import datasets
-import harm_age
-import harm_data_metadata
-import harm_data_numerical
-import harm_data_record
-import harm_data_types
-import harm_reference
-import harm_timeslices
+import .datasets
+import .harm_age
+import .harm_data_metadata
+import .harm_data_numerical
+import .harm_data_record
+import .harm_data_types
+import .harm_reference
+import .harm_timeslices
 
 
 __all__ = ["settings", 
