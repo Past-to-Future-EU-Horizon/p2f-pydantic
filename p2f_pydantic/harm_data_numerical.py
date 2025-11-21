@@ -30,10 +30,6 @@ class harmonized_float(BaseModel):
     fk_data_record: str
     fk_data_type: UUID
 
-## With this model below we can reduce the number of services needed
-## to insert or update data in the database. 
-## We just need to have a declaration of int or float, and if the 
-## confidence values exist, we can further deduce the target table. 
 class insert_harm_numerical(BaseModel):
     fk_data_record: str
     fk_data_type: UUID
