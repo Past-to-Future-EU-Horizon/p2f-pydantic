@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from pydantic import HttpUrl, Base64Str
 from typing import Literal, List, Optional, Union
-from datetime import date
+from datetime import date, datetime
 
 class DataCiteDOI_DATA_CREATORS(BaseModel):
     name: str
@@ -20,7 +20,7 @@ class DataCiteDOI_DATA_SUBJECTS(BaseModel):
     classificationCode: str
 
 class DataCiteDOI_DATA_DATES(BaseModel):
-    date: date
+    date: Union[date, datetime]
     dateType: str
 
 class DataCiteDOI_DATA_TYPES(BaseModel):
@@ -37,7 +37,7 @@ class DataCiteDOI_DATA_RELATEDIDENTIFIERS(BaseModel):
     relatedIdentifierType: str
 
 class DataCiteDOI_DATA_FUNDINGREFERENCES(BaseModel):
-    schemaUri: HttpUrl
+    schemeUri: HttpUrl
     awardTitle: str
     funderName: str
     awardNumber: str
@@ -62,7 +62,7 @@ class DataCiteDOI_DATA_ATTRIBUTES(BaseModel):
     # contributors:  # []
     dates: List[DataCiteDOI_DATA_DATES] 
     language: Optional[str] = None # None
-    types: List[DataCiteDOI_DATA_TYPES] 
+    types: DataCiteDOI_DATA_TYPES
     relatedIdentifiers: List[DataCiteDOI_DATA_RELATEDIDENTIFIERS] 
     # relatedItems:  # []
     sizes: List[str] 
@@ -75,7 +75,7 @@ class DataCiteDOI_DATA_ATTRIBUTES(BaseModel):
     xml: Base64Str 
     url: HttpUrl 
     contentUrl: Optional[HttpUrl] = None 
-    metadataVersion: str
+    metadataVersion: Optional[Union[str, int]] = None
     schemaVersion: HttpUrl
 
 class DataCiteDOI_DATA_RELATIONSHIP(BaseModel):
