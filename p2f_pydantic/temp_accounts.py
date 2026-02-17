@@ -6,3 +6,6 @@ class temp_accounts(BaseModel):
     email: EmailStr
     token: str
     expiration: datetime
+
+class request_token(BaseModel):
+    email: EmailStr
