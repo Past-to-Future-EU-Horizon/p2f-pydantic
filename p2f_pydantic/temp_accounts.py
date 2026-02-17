@@ -1,11 +1,9 @@
 from pydantic import BaseModel
 from pydantic import EmailStr
 from datetime import datetime
+from typing import Optional
 
-class temp_accounts(BaseModel):
+class Temp_Account(BaseModel):
     email: EmailStr
-    token: str
-    expiration: datetime
-
-class request_token(BaseModel):
-    email: EmailStr
+    token: Optional[str] = None
+    expiration: Optional[datetime] = None
