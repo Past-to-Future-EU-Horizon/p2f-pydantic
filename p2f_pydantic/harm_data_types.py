@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 from uuid import UUID
 
-class harm_data_type(BaseModel):
+class HARM_Data_Type(BaseModel):
     datatype_id: Optional[UUID] = None
     measure: str
     unit_of_measurement: str

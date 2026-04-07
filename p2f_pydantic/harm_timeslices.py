@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 from uuid import UUID
 
-class harm_timeslice(BaseModel):
+class HARM_Timeslice(BaseModel):
     timeslice_id: Optional[UUID] = None
     timeslice_name: str
     timeslice_age_mean: int

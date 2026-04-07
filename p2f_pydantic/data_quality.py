@@ -3,13 +3,13 @@ from pydantic import EmailStr
 from uuid import UUID
 from typing import Optional
 
-class dq_comment(BaseModel):
+class DQ_Comment(BaseModel):
     comment_id: Optional[UUID]=None
     email: EmailStr
     comment: str
     dataset_id: UUID
 
-class dq_rating(BaseModel):
+class DQ_Rating(BaseModel):
     email: EmailStr
     rating: int
     dataset_id: UUID

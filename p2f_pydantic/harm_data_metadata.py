@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 from uuid import UUID
 
-class harm_location(BaseModel):
+class HARM_Location(BaseModel):
     location_identifier: Optional[UUID] = None
     location_name: Optional[str] = None
     location_code: Optional[str] = None
@@ -11,17 +11,17 @@ class harm_location(BaseModel):
     elevation: float
     location_age: int
 
-class harm_location_to_record(BaseModel):
+class HARM_Location_to_Record(BaseModel):
     fk_harm_location: UUID
     fk_data_record: str
 
-class harm_bounding_box(BaseModel):
+class HARM_Bounding_Box(BaseModel):
     north: float
     east: float
     south: float
     west: float
 
-class harm_data_species(BaseModel):
+class HARM_Data_Species(BaseModel):
     species_identifier: Optional[UUID] = None
     display_species: str
     common_name: Optional[str] = None
@@ -41,6 +41,6 @@ class harm_data_species(BaseModel):
     tax_species: Optional[str] = None
     tax_subspecies: Optional[str] = None
 
-class harm_species_to_record(BaseModel):
+class HARM_Species_to_Record(BaseModel):
     fk_species_identifier: Optional[UUID] = None
     fk_data_record: str
