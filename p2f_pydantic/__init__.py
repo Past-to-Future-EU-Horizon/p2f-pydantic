@@ -8,6 +8,9 @@ import p2f_pydantic.harm_reference
 import p2f_pydantic.harm_timeslices
 import p2f_pydantic.link_git
 import p2f_pydantic.data_quality
+import p2f_pydantic.system
+import p2f_pydantic.temp_accounts
+import p2f_pydantic.doi
 
 
 __all__ = ["settings", 
@@ -20,5 +23,8 @@ __all__ = ["settings",
            "harm_reference",
            "harm_timeslices",
            "link_git", 
-           "data_quality"
+           "data_quality",
+           "system",
+           "doi",
+           "temp_accounts"
            ]
