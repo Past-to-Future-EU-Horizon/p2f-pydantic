@@ -2,9 +2,15 @@
 
 **New in v0.0.12**
 
+## v0.0.16
+
+2026-05-07
+
+* Fix typing issue in harm_ds_time
+
 ## v0.0.15
 
-2026-05-08
+2026-05-07
 
 * Fix __init__ issue
 
