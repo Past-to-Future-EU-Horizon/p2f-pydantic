@@ -4,7 +4,7 @@ from typing import Optional
 from uuid import UUID
 
 class Datasets(BaseModel):
-    dataset_identifier: Optional[UUID] = None
+    dataset_id: Optional[UUID] = None
     doi: str
     title: str
     sub_dataset_name: Optional[str] = None
