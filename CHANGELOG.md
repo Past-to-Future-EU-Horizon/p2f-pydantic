@@ -2,6 +2,12 @@
 
 **New in v0.0.12**
 
+## v0.0.13
+
+2026-05-07
+
+* Add Seasonality and Frequency
+
 ## v0.0.12
 
 2026-05-07
