@@ -2,6 +2,12 @@
 
 **New in v0.0.12**
 
+## v0.0.17
+
+2026-05-20
+
+* Add seasonality for dataset and record, age model, and keywords
+
 ## v0.0.16
 
 2026-05-07
