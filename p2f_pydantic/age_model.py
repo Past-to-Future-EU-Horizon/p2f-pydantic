@@ -4,5 +4,5 @@ from uuid import UUID
 
 class Age_Model(BaseModel):
     age_model_id: Optional[UUID] = None
-    model_name: str
-    model_description: Optional[str] = None
+    age_model_name: str
+    age_model_description: Optional[str] = None

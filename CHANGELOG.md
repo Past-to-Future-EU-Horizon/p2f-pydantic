@@ -2,6 +2,12 @@
 
 **New in v0.0.12**
 
+## v0.0.18
+
+2026-05-20
+
+* Fix age model to avoid issues with pydantic internals
+
 ## v0.0.17
 
 2026-05-20
