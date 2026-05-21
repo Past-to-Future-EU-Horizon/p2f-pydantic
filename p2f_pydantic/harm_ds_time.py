@@ -1,8 +1,9 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional, Literal
 from uuid import UUID
 
 class HARM_DS_TimeCoverage(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     dataset_id: UUID
     oldest: int
     youngest: int
@@ -15,11 +16,13 @@ class HARM_DS_TimeCoverage(BaseModel):
     younger_conf_interval: Optional[float] = None
 
 class HARM_DS_Seasonailty(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     dataset_id: UUID
     has_seasonality: bool
     seasonality_type: Optional[Literal["Hot/Cold", "Summer/Winter", "Spring/Summer/Winter/Fall", "Other"]] = None
 
 class HARM_DS_Frequency(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     dataset_id: UUID
     mean_frequency: Optional[int]
     shortest_frequency: Optional[int]

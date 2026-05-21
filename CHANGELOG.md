@@ -2,6 +2,11 @@
 
 **New in v0.0.12**
 
+## v0.0.19
+
+* Add Keyword Dictionary type
+* Enable ORM Mode (Attribute mode)
+
 ## v0.0.18
 
 2026-05-20

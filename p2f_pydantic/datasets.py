@@ -1,9 +1,10 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import date
 from typing import Optional
 from uuid import UUID
 
 class Datasets(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     dataset_id: Optional[UUID] = None
     doi: str
     title: str

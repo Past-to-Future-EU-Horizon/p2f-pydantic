@@ -1,8 +1,9 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional, Literal, Union, List
 from uuid import UUID
 
 class HARM_Int_Confidence(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     value: int
     upper_conf_interval: float
     lower_conf_interval: float
@@ -12,11 +13,13 @@ class HARM_Int_Confidence(BaseModel):
     fk_data_type: UUID
 
 class HARM_Int(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     value: int
     fk_data_record: str
     fk_data_type: UUID
 
 class HARM_Float_Confidence(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     value: float
     upper_conf_interval: float
     lower_conf_interval: float
@@ -26,11 +29,13 @@ class HARM_Float_Confidence(BaseModel):
     fk_data_type: UUID
 
 class HARM_Float(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     value: float
     fk_data_record: str
     fk_data_type: UUID
 
 class Insert_HARM_Numerical(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     fk_data_record: str
     fk_data_type: UUID
     numerical_type: Literal["INT", "FLOAT"]
@@ -41,6 +46,7 @@ class Insert_HARM_Numerical(BaseModel):
     lower_conf_value: Optional[Union[int, float]] = None
 
 class Return_HARM_Numerical(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     data_harmonized_int: Optional[List[HARM_Int]] = None
     data_harmonized_int_confidence: Optional[List[HARM_Int_Confidence]] = None
     data_harmonized_float: Optional[List[HARM_Float]] = None
