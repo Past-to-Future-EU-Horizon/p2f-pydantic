@@ -8,4 +8,5 @@ class HARM_Data_Type(BaseModel):
     measure: str
     unit_of_measurement: str
     method: Optional[str] = None
+    calibration: Optional[str] = None
     is_proxy: bool
