@@ -2,6 +2,10 @@
 
 **New in v0.0.12**
 
+## v0.0.24
+
+* Add Authorization check for new data upload flow. 
+
 ## v0.0.19
 
 * Add Keyword Dictionary type

@@ -7,3 +7,6 @@ class Temp_Account(BaseModel):
     email: EmailStr
     token: Optional[str] = None
     expiration: Optional[datetime] = None
+
+class Authorization_Check(BaseModel):
+    authorized: bool = False
