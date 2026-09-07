@@ -2,6 +2,10 @@
 
 **New in v0.0.12**
 
+## v0.0.26
+
+* Fix datetime annotation in temp accounts authorization check
+
 ## v0.0.25
 
 * Add datetime to authorization check
