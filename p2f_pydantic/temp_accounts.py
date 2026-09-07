@@ -10,3 +10,4 @@ class Temp_Account(BaseModel):
 
 class Authorization_Check(BaseModel):
     authorized: bool = False
+    authorization_time = datetime
