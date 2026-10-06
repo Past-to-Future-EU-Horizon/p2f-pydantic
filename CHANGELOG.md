@@ -2,6 +2,11 @@
 
 **New in v0.0.12**
 
+## v0.0.28
+
+* Make total harm_core length optional
+* Add more core and coresegment metadata in harm_core
+
 ## v0.0.27
 
 * Add harm_core
