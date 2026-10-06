@@ -6,7 +6,7 @@ class Core(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     core_id: UUID | None = None
     core_type: Literal["ice", "sediment", "other"] = "other"
-    total_length: float
+    total_length: float | None = None
     fk_location: UUID | None = None
 
 class CoreSegment(BaseModel):
