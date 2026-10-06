@@ -2,6 +2,10 @@
 
 **New in v0.0.12**
 
+## v0.0.27
+
+* Add harm_core
+
 ## v0.0.26
 
 * Fix datetime annotation in temp accounts authorization check
