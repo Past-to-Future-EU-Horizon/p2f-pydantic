@@ -2,6 +2,10 @@
 
 **New in v0.0.12**
 
+## v0.0.29
+
+* Add AssignConfirm and RemoveConfirm data types. 
+
 ## v0.0.28
 
 * Make total harm_core length optional

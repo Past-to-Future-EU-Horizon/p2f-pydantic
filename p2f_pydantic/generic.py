@@ -7,3 +7,11 @@ class Message(BaseModel):
     :type BaseModel: Pydantic.BaseModel
     """
     message: str
+
+class AssignConfirmation(BaseModel):
+    assigned: list[str]
+    confirmed: bool = False
+
+class RemoveConfirmation(BaseModel):
+    removed: list[str]
+    confirmed: bool = False
