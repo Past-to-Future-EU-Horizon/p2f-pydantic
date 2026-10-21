@@ -51,3 +51,10 @@ class Return_HARM_Numerical(BaseModel):
     data_harmonized_int_confidence: Optional[List[HARM_Int_Confidence]] = None
     data_harmonized_float: Optional[List[HARM_Float]] = None
     data_harmonized_float_confidence: Optional[List[HARM_Float_Confidence]] = None
+
+class Numerical_Table_Statistics(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    count_int: int = 0
+    count_int_confidence: int = 0
+    count_float: int = 0
+    count_float_confidence: int = 0
