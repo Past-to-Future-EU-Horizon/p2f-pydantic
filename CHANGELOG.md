@@ -2,6 +2,11 @@
 
 **New in v0.0.12**
 
+## v0.0.30
+
+* Add DeleteConfirm
+* Add Numerical Statistics 
+
 ## v0.0.29
 
 * Add AssignConfirm and RemoveConfirm data types. 
