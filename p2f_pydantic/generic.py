@@ -15,3 +15,7 @@ class AssignConfirmation(BaseModel):
 class RemoveConfirmation(BaseModel):
     removed: list[str]
     confirmed: bool = False
+
+class DeleteConfirmation(BaseModel):
+    deleted: list[str]
+    confirmed: bool = False
