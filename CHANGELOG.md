@@ -2,6 +2,10 @@
 
 **New in v0.0.12**
 
+## v0.0.31
+
+* Add total count to numerical statistics
+
 ## v0.0.30
 
 * Add DeleteConfirm

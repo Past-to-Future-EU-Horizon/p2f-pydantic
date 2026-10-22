@@ -58,3 +58,4 @@ class Numerical_Table_Statistics(BaseModel):
     count_int_confidence: int = 0
     count_float: int = 0
     count_float_confidence: int = 0
+    count_total: int = 0
